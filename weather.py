@@ -1,7 +1,8 @@
 import click
 import requests
+import os
 
-api_key = 'b9469532f9cc5a05bd1611cd5aba402a'
+api_key = os.environ['OW_KEY']
 
 
 def current_weather(location, api_key=api_key):
